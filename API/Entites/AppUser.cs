@@ -13,7 +13,7 @@ namespace API.Entites
         public byte[] PasswordSold { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string KnownAs { get; set; }
-        public DateTime Created { get; set; } = DateTime.Now; 
+        public DateTime Created { get; set; } = DateTime.Now;  
         public DateTime LastActive { get; set; } = DateTime.Now; 
         public string Gender { get; set; }
         public string Introduction { get; set; }
@@ -23,8 +23,8 @@ namespace API.Entites
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
         
-        public int GetAge() {
-            return DateOfBirth.CalculateAge();
-        }
+        // public int GetAge() {
+        //     return DateOfBirth.CalculateAge();
+        // }
     }
 }
